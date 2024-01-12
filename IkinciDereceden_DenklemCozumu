@@ -1,0 +1,29 @@
+Console.WriteLine("Çözülmesini istediğiniz AX²+BX+C şeklindeki denklemin katasılarını yazınız");
+Console.WriteLine("AX²+BX+C için A=?");
+double a=Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("AX²+BX+C için B=?");
+double b =Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("AX²+BX+C için C=?");
+double c =Convert.ToDouble(Console.ReadLine());
+int delta = Convert.ToInt16(Math.Pow(b,2)- 4 * a * c);
+int x1, x2, imajiner1 ,imajiner2;
+if (delta == 0)
+{
+    x1 = Convert.ToInt16((-b - Math.Sqrt(delta)) / 2 * a);
+    Console.WriteLine("Denklemin çakışık iki kökü vardır ve kökü:" + x1);
+}
+else if (delta < 0)
+{
+    x1 = Convert.ToInt16((-b / 2 * a));
+    x2 = Convert.ToInt16((-b / 2 * a));
+    imajiner1= Convert.ToInt16((Math.Sqrt(-delta) / 2 * a));
+    imajiner2= Convert.ToInt16((Math.Sqrt(-delta) / 2 * a));
+    Console.WriteLine("X1= " + x1 + " + " + imajiner1 + "i\nX2= " + x2 + " - " + imajiner2 + "i");
+    //Console.WriteLine("Denklemin reel kökü yoktur.Ancak;\n" + x1 + "i\n" + x2 + "i"); 
+}
+else
+{
+    x1 = Convert.ToInt16((-b - Math.Sqrt(delta)) / 2 * a);
+    x2 = Convert.ToInt16((-b + Math.Sqrt(delta)) / 2 * a);
+    Console.WriteLine("X1= " + x1 + " \n" + "X2= " + x2);
+}
