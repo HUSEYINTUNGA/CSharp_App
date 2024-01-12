@@ -1,0 +1,8 @@
+double kok = 1, sayac = 0;
+Console.WriteLine("Karekök değerini bulmak istediğiniz değeri giriniz");
+int sayı=Convert.ToInt16(Console.ReadLine());
+while(sayac<=sayı)
+{
+    sayac++;
+    kok = (sayı / kok + kok) / 2;
+}
