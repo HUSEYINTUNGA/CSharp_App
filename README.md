@@ -1,2 +1,4 @@
 # CSharp_App
-Bu depoda C# dilini öğrenirken "kendi" yazdığım  uygulamalar yer almaktadır
+
+2022-2023 eğitim öğretim döneminde bireysel çalışmalarımın sonucunda C# dilini kullanarak geliştirmiş,yazmış olduğum uygulamalar.
+
